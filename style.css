@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 20px;
+    --primary-blue: #D9F7FA;
+    --color-font:#0D2451;
+    --line-height: 90px;
+    font-family: 'Montserrat, san-serif';
+    font-display: swap;
+    /*color: var(--color-font) !important; if you want to apply it to everything without it being overriden by something else*/
+}
+
+a {
+    color: var(--color-font);
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    color: var(--color-font);
+}
+
+.main-nav-logo a, .main-nav-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-nav-logo a span {
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.main-nav-links {
+    display:flex;
+    flex-direction: row;
+}
+
+.main-nav-links ul {
+    line-height: var(--line-height);
+    margin: 0;
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--primary-blue);
+    padding: 0 20px;
+}
+
+
+.main-nav-links ul li {
+    display: inline;
+    margin: 20px;
+}
+
+
+ul {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-blue);
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.header > div { /*header > div: it accesses the direct div children of the header class, so the two divisions inside the header class*/
+    width: 40%;
+}
+
+.gpa-container {
+    box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+    border-radius: 10px;
+    width: 75%;
+    padding: 20px;
+    position: absolute;
+    top: calc(680px - 50%);
+    left: calc(304px - 37%);
+    background-color: white;
+}
+
+.inputs {
+    display: flex;
+}
